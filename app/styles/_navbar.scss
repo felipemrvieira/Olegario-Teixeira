@@ -1,0 +1,177 @@
+
+.fixed{
+    z-index: 999;
+    position: fixed;
+    -webkit-box-shadow: 0px 6px 8px -4px rgba(0, 0, 0, 0.015);
+    -moz-box-shadow: 0px 6px 8px -4px rgba(0, 0, 0, 0.015);
+    box-shadow: 0px 6px 8px -4px rgba(0, 0, 0, 0.015);
+    padding: 10px 180px !important;
+    @media screen and (max-width: 830px) {
+      padding: 10px 36px !important;
+    }
+  
+    
+    a {
+      font-size: 1.1em !important;
+    }
+    img{
+      width: 50% !important;
+    }
+  }
+  #menu-header{
+      padding: 20px 0;
+      @media screen and (max-width: 830px) {
+        padding: 10px 36px !important;
+      }
+      background-color:#0c192e;
+      // position: absolute;
+      width: 100%;
+      #menu{
+        padding: 0 150px;
+        display: flex;
+        #logo{
+          align-self: center;
+          display: inline-block;
+          img{
+            width: 100%;
+          }
+        }
+        .navegacao{
+          margin-left: auto;
+          margin-right: auto;
+          align-self: center;
+          display: flex;
+          #nav-principal{
+            display: inline-block;
+            padding: 0 10px;
+            .menu-item{
+              display: inline-block;
+              a{
+                  font-family: 'Quark-Light';
+                  font-size: 1.1em;
+                  text-transform: uppercase;
+                  padding: 5px 12px;
+                  text-decoration: none;
+                  color: white;
+                  cursor: pointer;
+                  position: relative;
+                  display: inline-block;
+              }
+              a:after {
+                display:block;
+                content: '';
+                height:2px;
+                background: #b59d62;
+                transform: scaleX(0.0001);  
+                transition: transform 150ms ease-in-out;
+                box-shadow: inset -40px 0px 80px -25px #b59d62;
+              }
+              a:hover:after {
+                transform: scaleX(1);
+              }
+              a:hover{
+                color: #b59d62
+              }
+              @media screen and (max-width: 1343px) {
+                a{
+                  font-size: 1.15em;
+                  padding: 5px 6px;
+                }
+              }
+    
+            }//li
+            .icon-menu{
+             display: none;
+            }
+          }//nav principal
+        }//navegacao
+        #call{
+          align-self: center;
+        }//call
+      }//menu
+    }//header
+    
+    @media screen and (max-width: 1220px) {
+    
+      #menu-header{
+        
+        #menu{
+          #logo{
+            display: inline-block;
+            max-width: 60%;
+          }
+          .navegacao{
+            align-self: center;
+            margin-right: 0;
+            #nav-principal{
+              
+              margin: 0;
+              .menu-item{
+                display: none;
+              }
+              a{
+                text-decoration: none;
+                color: #00428a;
+                
+              }
+              .icon-menu{
+                color: #00428a;
+                display: inline-block;
+                font-size: 45px;
+                line-height: 45px;
+                padding: 0;
+              }
+            }//nav principal
+          }//navegacao
+          #call{
+            display: none;
+          }
+        }//menu
+      }//header
+    }//media
+    
+    
+    .overlay{
+      display: none;
+      z-index: 1000;
+      min-height: 100vh;
+      width: 100%;
+      opacity: 0.97;
+      background-color: #00428a;
+      position: fixed;
+      #nav-mobile{
+        opacity: 1;
+        text-align: center;
+        list-style-type: none;
+        width: 100%;
+        padding: 0;
+        margin-top: 100px;
+        
+        .menu-item{
+          padding: 12px;
+          a{
+            text-transform: uppercase;
+            font-family: "Roboto-Thin";
+            color: white;
+            font-size: 24px;
+            
+          }
+        }//menu-item
+        .icon-menu{
+          margin-top: 15px;
+          color: blue;
+          a{
+            font-size: 40px;
+            color: white;
+            text-decoration: none;
+          }
+    
+        }
+      }//nav-mobile
+    }
+    
+    .open{
+      position: fixed;
+      display: block;
+    }
+    
