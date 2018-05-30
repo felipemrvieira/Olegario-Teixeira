@@ -88,22 +88,34 @@ body{
   height: 90px;
   background-image: url(../images/barra.png);
   background-repeat: no-repeat;
-  background-size: 100%;
-  h2{
+  background-size: cover;
+
+  @include padding-geral;
+
+  h3{
     margin: 0;
     padding: 20px 0px 10px 0px;
     color: #b59d62;
+    font-family: 'Aquawax-Black';
+    text-transform: uppercase;
   }
 }
 
 #sec-2{
   min-height: 100vh;
   background-color:#0c192e;
-  p{
-    color: white;
+  #texto-container{
+    margin-top: 32px;
+    @include padding-geral;
+    p{
+      letter-spacing: 1.5px;
+      color: white;
+    }
   }
+  
   #images-container{
     text-align: center;
+    @include padding-geral;
     img{
       padding: 10px;
       border-radius: 50%;
