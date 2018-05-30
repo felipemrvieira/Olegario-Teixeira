@@ -17,6 +17,24 @@
   src: url('../fonts/Aquawax-Black.ttf');
 }
 
+@font-face {
+  font-family: 'Aquawax-Medium';
+  src: url('../fonts/Aquawax-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'Aquawax-Light';
+  src: url('../fonts/Aquawax-Light.ttf');
+}
+@mixin padding-geral{
+  @media screen and (min-width: 768px) {
+    padding: 21px 180px 45px 180px;
+  }
+  @media screen and (max-width: 765px) {
+    padding: 21px 35px 45px 35px;
+  }
+}
+
 body{
   margin: 0;
   padding: 0;
@@ -40,10 +58,29 @@ body{
 // }
 
 #sec-1{
-  height: 180vh;
+  height: 60vh;
   background-image: url(../images/farol.png);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
+  background-position: top right;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  @include padding-geral;
+
+  div{
+    color:#0c192e;
+    padding: 0;
+    h1{
+      font-family: 'Aquawax-Black';
+      text-transform: uppercase;
+    }
+    p{
+      font-family: 'Aquawax-Light';
+      font-size: 18px;
+    }
+  }
 
 }
 
