@@ -298,7 +298,8 @@ body{
 #sec-5{
   min-height: 60vh;
   #links-container{
-    margin: 120px;
+    @include padding-geral;
+    
     .col-md-3{
       padding: 0;
       padding-top: 32px;
