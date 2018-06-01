@@ -127,64 +127,121 @@ body{
 }
 
 #sec-3{
-  min-height: 100vh;
-  .nome-advogado{text-align: center;}
-
-  .tooltip-1 {
-    position: relative;
-    display: inline-block;
+  min-height: 85vh;
+  .nome-advogado{
+    text-align: center;
+    font-family: 'Aquawax-Black';
+    font-size: 20px;
+    margin-top: 30px;
   }
 
-  .tooltiptext-1 {
-    transition: all 5s ease;
+  #adv-container{
+    padding: 50px;
 
-    h3{
-      display:inline;
-      color:#0c192e;
-      text-transform: uppercase;
-      background-color: #b59d62;
-      clear: right;
+    .tooltip-1 {
+      position: relative;
+      display: inline-block;
+      padding-right: 32px;
+      float: right;
+      .tooltiptext-1 {
+        transition: all 3s ease;
+        -webkit-box-shadow: 10px 11px 5px -6px rgba(0,0,0,0.54);
+        -moz-box-shadow: 10px 11px 5px -6px rgba(0,0,0,0.54);
+        box-shadow: 10px 11px 5px -6px rgba(0,0,0,0.54);
+    
+        h3{
+          display:inline;
+          color:#0c192e;
+          text-transform: uppercase;
+          background-color: #b59d62;
+          clear: right;
+          line-height: 30px;
+        }
+        p{
+          margin: 10px 0 10px 0;
+          letter-spacing: 0.5px;
+        }
+        visibility: hidden;
+        width: 310px;
+        background-color:#0c192e;
+        color: #fff;
+        border-radius: 6px;
+        padding: 20px;
+    
+        /* Position the tooltip */
+        position: absolute;
+        z-index: 1;
+        bottom: 0;
+        right: 50%;
+      }
     }
-    visibility: hidden;
-    width: 310px;
-    background-color:#0c192e;
-    color: #fff;
-    border-radius: 6px;
-    padding: 20px;
+    
+    
+    .tooltip-2 {
+      position: relative;
+      display: inline-block;
+      padding-left: 32px;
+      float: left;
 
-    /* Position the tooltip */
-    position: absolute;
-    z-index: 1;
-    bottom: 0;
-    right: 50%;
-  }
-  .tooltip-2 {
-    position: relative;
-    display: inline-block;
-  }
-  .tooltiptext-2 {
-    transition: all 5s ease;
-
-    h3{
-      display:inline;
-      color:#0c192e;
-      text-transform: uppercase;
-      background-color: #b59d62;
-      clear: right;
+      .tooltiptext-2 {
+        transition: all 3s ease;
+        -webkit-box-shadow: 10px 11px 5px -6px rgba(0,0,0,0.54);
+        -moz-box-shadow: 10px 11px 5px -6px rgba(0,0,0,0.54);
+        box-shadow: 10px 11px 5px -6px rgba(0,0,0,0.54);
+    
+        h3{
+          display:inline;
+          color:#0c192e;
+          text-transform: uppercase;
+          background-color: #b59d62;
+          clear: right;
+          line-height: 30px;
+        }
+        p{
+          margin: 10px 0 10px 0;
+          letter-spacing: 0.5px;
+        }
+        visibility: hidden;
+        width: 310px;
+        background-color:#0c192e;
+        color: #fff;
+        border-radius: 6px;
+        padding: 20px;
+    
+        /* Position the tooltip */
+        position: absolute;
+        z-index: 1;
+        bottom: 0;
+        left: 50%;
+      }
     }
-    visibility: hidden;
-    width: 310px;
-    background-color:#0c192e;
-    color: #fff;
-    border-radius: 6px;
-    padding: 20px;
 
-    /* Position the tooltip */
-    position: absolute;
-    z-index: 1;
-    bottom: 0;
-    left: 50%;
-  }
+    @media screen and (max-width: 500px) {
+      .tooltip-1 {
+        padding: 0;
+        .tooltiptext-1 {
+          right: 0;
+          h3{
+            
+          }
+          p{
+
+          }
+        }
+      }
+      .tooltip-2 {
+        padding: 0;
+        .tooltiptext-2 {
+          left: 0;
+          h3{
+          }
+          p{    
+          }
+
+        }
+      }
+
+    }
 
   .tooltip-1:hover .tooltiptext-1 {
     visibility: visible;
@@ -192,13 +249,13 @@ body{
   .tooltip-2:hover .tooltiptext-2 {
     visibility: visible;
   }
+   
+  }
 
-  #adv-1{
-    float: right;
-  }
-  #adv-2{
-    float: left;
-  }
+  
+
+ 
+  
 }
 
 #sec-4{
