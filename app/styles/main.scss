@@ -299,7 +299,7 @@ body{
   min-height: 60vh;
   #links-container{
     @include padding-geral;
-    
+
     .col-md-3{
       padding: 0;
       padding-top: 32px;
@@ -320,9 +320,14 @@ body{
   }
 }
 #sec-6{
-    min-height: 100vh;
+  min-height: 80vh;
+
     #form-wrapper{
-      margin: 30px 0;
+      @include padding-geral;
+      form{
+        padding-top: 24px; 
+        padding-bottom: 24px; 
+      }
       .col-md-12, .col-md-6 {padding-left: 0;}
       .btn, .form-control{
         border-radius: 0;
