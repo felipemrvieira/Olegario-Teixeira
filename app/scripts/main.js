@@ -2,10 +2,10 @@ $(document).ready(function () {
     $(window).on('scroll', function () {
         if ($(window).scrollTop() > 120) {
             $('#menu-header').addClass('fixed');
-            $("#logo-principal").attr("src","/images/logo-deitada.png");
+            $('#logo-principal').attr('src','images/logo-deitada.png');
         } else {
             $('#menu-header').removeClass('fixed');
-            $("#logo-principal").attr("src","/images/logo.png");
+            $('#logo-principal').attr('src','images/logo.png');
         }
     });
     $('.scrollTo').on('click', function (e) {
