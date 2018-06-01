@@ -341,23 +341,37 @@ body{
 
 }
 #sec-7{
+  #info-wraper{
+    @include padding-geral;
+
     #esquerda{
-      padding-left: 0;
+      padding: 0;
+      padding-right: 12px;
       font-family: 'Quark-Light';
       color: #5d5d5d;
       letter-spacing: 0.5px;
       font-size: 16px;
       .endereco{
+        margin-top: 12px;
+
+        p{
+          margin: 0;
+          text-align: center;
+        }
       }
       .contatos{
         font-family: 'Quark-Bold';
         padding-bottom: 24px;
         p{
           margin: 0;
+          text-align: center;
+
         }
       }
     }
     #direita{
+      padding: 0;
+      padding-left: 12px;
       @media screen and (max-width: 765px) {
         padding-top: 35px;
         padding-left: 0;
@@ -365,8 +379,9 @@ body{
 
       }
       #mapa{
-        height: 500px;
+        height: 600px;
         
       }
     }
+  } 
 }
